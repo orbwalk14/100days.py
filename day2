@@ -1,0 +1,9 @@
+bill = input("Hello, how much was your bill? ")
+tip = input("What % would you like to tip? ")
+party = input("How many people are in your party? ")
+tipPerc = float(tip) / 100
+bigTip = tipPerc + 1
+total = float(bill) * bigTip
+PerPerson = float(total) / float(party)
+final = round(PerPerson, 2)
+print(f"Each person will pay {final}$!")
